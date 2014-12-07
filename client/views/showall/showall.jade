@@ -1,0 +1,18 @@
+h4 All Users:
+
+.userTable
+  table.table.table-bordered.center
+    thead
+      tr
+        th(width=250) Name
+        th Age
+        th Location
+        th(width=200) Email
+        th Message
+    tbody
+      tr(ng-repeat='u in allUsers')
+        td {{u.username}}
+        td {{u.age}}
+        td {{u.location}}
+        td {{u.email}}
+        td: a.button(href='/#/messages') Message Me
